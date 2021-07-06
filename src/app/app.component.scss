@@ -1,0 +1,100 @@
+@import "/node_modules/bootstrap/scss/functions";
+@import "/node_modules/bootstrap/scss/_functions.scss";
+@import "/node_modules/bootstrap/scss/_variables.scss";
+@import "/node_modules/bootstrap/scss/mixins/_breakpoints.scss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Rubik:ital@1&display=swap');
+
+.hero-content__subtitle {
+    font-family: 'Rubik', sans-serif;
+}
+.hero-content-wrapper {
+    padding: 1.6rem 0rem 0rem 2rem;
+}
+
+
+// FEATURE COMPONENT
+.feature {
+    &__image {
+        width: 30px;
+    }
+    &__title {
+    }
+    &__content {
+        font-size: 11px;
+    }
+}
+
+@include media-breakpoint-up(xs) { 
+    .hero-content {
+        &__title {
+            font-size: 19px;
+        }
+        &__subtitle {
+            font-size: 11px;
+
+        }
+    }
+
+    // FEATURE COMPOENENT
+    .fluid {
+        width: 100%;
+    }
+ }
+
+@include media-breakpoint-up(sm) { 
+    .hero-content {
+        &__title {
+
+        }
+        &__subtitle {
+            font-size: 11px;
+        }
+    }
+
+    // FEATURE COMPOENENT
+    .fluid {
+        width: 100%;
+    }
+ }
+@include media-breakpoint-up(md) {
+
+    .hero-content {
+        &__title {
+            font-size: 50px;
+        }
+        &__subtitle {
+            font-size: 11px;
+        }
+    }
+ }
+@include media-breakpoint-up(lg) { 
+    .hero-content {
+        &__title {
+            font-size: 50px;
+        }
+        &__subtitle {
+            font-size: 11px;
+        }
+    }
+
+ }
+@include media-breakpoint-up(xl) { 
+    .hero-content {
+        &__title {
+            font-size: 50px;
+        }
+        &__subtitle {
+            font-size: 11px;
+        }
+    }
+ }
+@include media-breakpoint-up(xxl) { 
+    .hero-content {
+        &__title {
+            font-size: 50px;
+        }
+        &__subtitle {
+            font-size: 11px;
+        }
+    }
+ }
