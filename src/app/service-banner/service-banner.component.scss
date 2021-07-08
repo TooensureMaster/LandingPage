@@ -1,0 +1,45 @@
+@import "/node_modules/bootstrap/scss/functions";
+@import "/node_modules/bootstrap/scss/_functions.scss";
+@import "/node_modules/bootstrap/scss/_variables.scss";
+@import "/node_modules/bootstrap/scss/mixins/_breakpoints.scss";
+
+p {
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+@include media-breakpoint-up(xs) { 
+    .feature {
+        padding: 1rem 0;
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+@include media-breakpoint-up(sm) { 
+    .feature {
+        padding: 1rem 0;
+        
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+
+}
+
+@include media-breakpoint-up(lg) { 
+
+}  
+
+@include media-breakpoint-up(xl) { 
+
+}
+
+@include media-breakpoint-up(xxl) { 
+
+}

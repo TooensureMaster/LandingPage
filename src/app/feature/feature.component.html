@@ -1,0 +1,9 @@
+<section class="row">
+    <section *ngFor="let feature  of features" class="col-6 col-lg-3">
+        <div class="feature">
+            <img src="{{ feature.icon }}" class="feature__image mb-2" width="60" alt="">
+            <h5 class="feature__title">{{ feature.name }}</h5>
+            <p class="feature__content">{{ feature.desc }}</p>
+        </div>    
+    </section>
+</section>

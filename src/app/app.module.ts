@@ -4,11 +4,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { FeatureComponent } from './feature/feature.component';
+import { PageBannerComponent } from './page-banner/page-banner.component';
+import { ServiceBannerComponent } from './service-banner/service-banner.component';
+import { PromoteBannerComponent } from './promote-banner/promote-banner.component';
+import { FeatureItemComponent } from './feature/feature-item/feature-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent
+    NavigationComponent,
+    FeatureComponent,
+    PageBannerComponent,
+    ServiceBannerComponent,
+    PromoteBannerComponent,
+    FeatureItemComponent
   ],
   imports: [
     BrowserModule,

@@ -12,32 +12,15 @@
 }
 
 
-// FEATURE COMPONENT
-.feature {
-    &__image {
-        width: 30px;
-    }
-    &__title {
-    }
-    &__content {
-        font-size: 11px;
-    }
-}
-
 @include media-breakpoint-up(xs) { 
     .hero-content {
         &__title {
-            font-size: 19px;
+            font-size: 30px;
         }
         &__subtitle {
             font-size: 11px;
 
         }
-    }
-
-    // FEATURE COMPOENENT
-    .fluid {
-        width: 100%;
     }
  }
 
@@ -49,11 +32,6 @@
         &__subtitle {
             font-size: 11px;
         }
-    }
-
-    // FEATURE COMPOENENT
-    .fluid {
-        width: 100%;
     }
  }
 @include media-breakpoint-up(md) {

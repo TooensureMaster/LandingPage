@@ -1,6 +1,25 @@
-
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+  </symbol>
+  <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+  </symbol>
+  <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+</svg>
 <header>
   <app-navigation></app-navigation>
+  <div class="alert alert-primary alert-dismissible fade show d-flex d-flex align-items-center mb-0" role="alert">
+    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+    <div>
+      <b>Site</b> : New Features | On The Way !
+    </div>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+
   <section class="bg-light text-center">
     <h5 class="text-secondary p-3 m-0">HOME</h5>
   </section>
@@ -24,161 +43,58 @@
   </div>
 </header>
 
+
 <main>
-  <section class="container-fluid bg-light mb-4">
-    <nav class="navigation">
-      <section class="row">
-        <section class="col-xs-12 col-md-3">
-
-          <div class="dropdown btn-click">
-            <button class=" btn btn-service fluid" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              <h6>UX Design</h6>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
-        </section>
-        <section class="col-xs-12 col-md-3">
-          <div class="dropdown btn-click">
-            <button class=" btn btn-service fluid" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              <h6>Website</h6>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
-        </section>
-        <section class="col-xs-12 col-md-3">
-          <div class="dropdown btn-click">
-            <button class=" btn btn-service fluid" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              <h6>Intergration</h6>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
-        </section>
-        <section class="col-xs-12 col-md-3">
-          <div class="dropdown btn-click">
-            <button class=" btn btn-service fluid" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              <h6>Learn</h6>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
-        </section>
-      </section>
-    </nav>
+  <!-- Service Section -->
+  <section class="container-fluid bg-light text-center text-Secondary mb-4">
+      <app-service-banner class="row"></app-service-banner>
   </section>
+
+  <!-- Feature Section -->
   <section class="container text-center">
-    <section class="row">
-
-      <section class="col-xs-12 col-md-6 col-lg-3">
-        <div class="feature">
-          <img src="../assets/img/icons/globe-solid.svg" class="feature__image mb-2" width="60" alt="">
-          <h5 class="feature__title">Website</h5>
-          <p class="feature__content">Build Fast, sucure, CMS based websites pre-built or custumized to fit your needs.</p>
-        </div>
-      </section>
-      
-      <section class="col-xs-12 col-md-6 col-lg-3">
-        <div class="feature">
-          <img src="../assets/img/icons/umbraco-brands.svg" class="feature__image mb-2" width="60" alt="">
-          <h5 class="feature__title">CMS Intergration</h5>
-          <p class="feature__content">Intergrate a content manangement system into a existing website, no need to keep hiring programmer.</p>
-        </div>
-      </section>
-  
-      <section class="col-xs-12 col-md-6 col-lg-3">
-        <div class="feature">
-          <img src="../assets/img/icons/github-icon.svg" class="feature__image mb-2" width="60" alt="">
-          <h5 class="feature__title">Developer</h5>
-          <p class="feature__content">Learn cutting edge web technology with our videos, articles courses and tutuerials free to you.</p>
-        </div>
-      </section>
-  
-      <section class="feature col-xs-12 col-md-6 col-lg-3">
-        <img src="../assets/img/icons/github-icon.svg" class="feature__image mb-2" width="60" alt="">
-        <h5 class="feature__title">Hire</h5>
-        <p class="feature__content">Learn cutting edge web technology with our videos, articles courses and tutuerials free to you.</p>
-      </section>
-    </section>
+      <app-feature></app-feature>
   </section>
 
-  <!-- Section service banners -->
-  <div class="row g-0 bg-light position-relative mb-3">
-    <div class="col-md-6 mb-md-0 p-md-4">
-      <img src="../assets/img/s.png" class="w-100" alt="...">
-    </div>
-    <div class="col-md-6 p-4 ps-md-0 align-self-center">
-      <h5 class="mt-0 mb-3">Tooensure Web Service | Welcome</h5>
-      <p>
-        Our skilled UX Designers are here waiting for you. Request after request. Make your dreams come true. We're here to make sure your journey is as afforable as possible, Offering a wide scale of services and 24hr email support. 
-      </p>
-      <a href="#" class="stretched-link btn btn-primary">Learn More</a>
-    </div>
-  </div>
-
-  <!-- Section service banners -->
-  <div class="row g-0 bg-light position-relative mb-3">
-    <div class="col-md-6 mb-md-0 p-md-4 order-2">
-      <img src="../assets/img/logo-cub.jpg" class="w-100" alt="...">
-    </div>
-    <div class="col-md-6 p-4 ps-md-4 align-self-center order-1">
-      <section class="container">
-        <h5 class="mt-0 mb-3">We Build Dreams | Services</h5>
-        <p>
-          Host your website free, no monthly fees. Add additional services, features or intergrations, such as a "Content Mangement System", "Authentications", etc.        </p>
-        <a href="#" class="stretched-link btn btn-primary">Try Free</a>
-      </section>
-    </div>
-  </div>
+  <!-- Section Promote banners -->
+  <section class="container-fluild">
+    <app-promote-banner></app-promote-banner>
+  </section>
 
     <!-- Social Links -->
     <section class="container text-center">
-      <section class="row">
+      <section class="row text-center">
   
-        <section class="col-xs-12 col-md-6 col-lg-3">
+        <section class="col-3 col-xs-6 col-md-6 col-lg-3">
           <a href="https://www.facebook.com/tooensure/" class="reset-link">
             <div class="feature">
-              <img src="../assets/img/social-media/facebook-square-brands.svg" class="feature__image mb-2" width="60" alt="">
-              <h5 class="feature__title">Facebook</h5>
+              <img src="../assets/img/social-media/facebook-square-brands.svg" class="feature__image mb-2" width="30" alt="">
+              <p class="feature__title">Facebook</p>
             </div>
           </a>
         </section>
         <!-- https://www.instagram.com/tooensurellc/ -->
-        <section class="col-xs-12 col-md-6 col-lg-3">
+        <section class="col-3 col-xs-6 col-md-6 col-lg-3">
           <a href="https://www.instagram.com/tooensurellc/" class="reset-link">
             <div class="feature">
-              <img src="../assets/img/social-media/instagram-square-brands (1).svg" class="feature__image mb-2" width="60" alt="">
-              <h5 class="feature__title">Instagram</h5>
+              <img src="../assets/img/social-media/instagram-square-brands (1).svg" class="feature__image mb-2" width="30" alt="">
+              <p class="feature__title">Instagram</p>
             </div>
           </a>
         </section>
     <!-- https://twitter.com/ -->
-        <section class="col-xs-12 col-md-6 col-lg-3">
+        <section class="col-3 col-xs-6 col-md-6 col-lg-3">
           <a href="https://twitter.com/" class="reset-link">
             <div class="feature">
-              <img src="../assets/img/social-media/twitter-square-brands.svg" class="reset-link feature__image mb-2" width="60" alt="">
-              <h5 class="feature__title">Twitter</h5>
+              <img src="../assets/img/social-media/twitter-square-brands.svg" class="reset-link feature__image mb-2" width="30" alt="">
+              <p class="feature__title">Twitter</p>
             </div>
           </a>
         </section>
     <!-- https://www.youtube.com/channel/UCJhMqAFI5-rgJCTFXVhbmjw -->
-        <section class="feature col-xs-12 col-md-6 col-lg-3">
+        <section class="col-3 feature col-xs-6 col-md-6 col-lg-3">
           <a href="https://www.youtube.com/channel/UCJhMqAFI5-rgJCTFXVhbmjw" class="reset-link">
-            <img src="../assets/img//social-media/youtube-brands.svg" class="feature__image mb-2" width="60" alt="">
-            <h5 class="feature__title reset-link">Youtube</h5>
+            <img src="../assets/img//social-media/youtube-brands.svg" class="feature__image mb-2" width="30" alt="">
+            <p class="feature__title reset-link">Youtube</p>
           </a>
         </section>
       </section>
