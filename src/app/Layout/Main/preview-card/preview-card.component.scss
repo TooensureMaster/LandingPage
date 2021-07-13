@@ -1,0 +1,37 @@
+@import "/node_modules/bootstrap/scss/functions";
+@import "/node_modules/bootstrap/scss/_functions.scss";
+@import "/node_modules/bootstrap/scss/_variables.scss";
+@import "/node_modules/bootstrap/scss/mixins/_breakpoints.scss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Rubik:ital@1&display=swap');
+
+.btn-tag {
+    margin-right: .5rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+}
+@include media-breakpoint-up(xs) { 
+    
+ }
+
+@include media-breakpoint-up(sm) { 
+    
+ }
+@include media-breakpoint-up(md) {
+
+    
+ }
+@include media-breakpoint-up(lg) { 
+    .card {
+        width: 18rem;
+        
+    }
+ }
+@include media-breakpoint-up(xl) { 
+   
+ }
+@include media-breakpoint-up(xxl) { 
+    
+ }

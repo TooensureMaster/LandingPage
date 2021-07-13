@@ -19,7 +19,9 @@
         <div class="col-3">
             <!-- HOME ICON -->
             <div class="dropdown">
-                <a class="btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="btn" 
+                routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+                [routerLink]="['/']" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <img src="../../assets/img/nav/home_white.svg" width="28" height="28" alt="">
                 </button>
@@ -29,7 +31,7 @@
         <div class="col-3">
             <!-- STORE ICON -->
             <div class="dropdown">
-                <a class="btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="btn" routerLinkActive="active" [routerLink]="['/store']" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <img src="../../assets/img/nav/store-solid-white.svg" width="24" height="24" alt="">
                 </button>

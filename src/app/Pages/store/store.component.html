@@ -1,0 +1,23 @@
+<!-- HERO IMAGE -->
+<!-- <section class="container-fluid">
+    <app-hero [element]="heroContents"></app-hero>
+</section> -->
+<div class="container-fluid alert alert-primary alert-dismissible fade show d-flex d-flex align-items-center mb-0" role="alert">
+  <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+  <div>
+    <b>Site</b> : New Features | On The Way !
+  </div>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<div class="alert alert-warning m-0" role="alert">
+  Our Shop is under development, Sorry ;)
+</div>
+
+
+<section class="container-fluid">
+  <section class="row">
+    <app-preview-card 
+  *ngFor="let item of articles"
+  [element]="item" class="col-sm-12 col-md-4 col-lg-3"></app-preview-card>
+  </section>
+</section>

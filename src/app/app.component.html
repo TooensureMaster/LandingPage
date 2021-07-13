@@ -9,124 +9,22 @@
     <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
   </symbol>
 </svg>
+
 <header>
   <app-navigation></app-navigation>
-  <div class="alert alert-primary alert-dismissible fade show d-flex d-flex align-items-center mb-0" role="alert">
-    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
-    <div>
-      <b>Site</b> : New Features | On The Way !
-    </div>
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-  </div>
-
-
-  <section class="bg-light text-center">
-    <h5 class="text-secondary p-3 m-0">HOME</h5>
-  </section>
-
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-
-      <div class="carousel-item active">
-        <section class="row theme">
-
-          <div class="col-8 hero-content-wrapper align-self-center">
-            <div class="hero-content text-white">
-              <h3 class="hero-content__title">Build Your Website | Today</h3>
-              <p class="hero-content__subtitle">Fast, secure and afforable all in one solution for you. </p>
-            </div>
-          </div>
-        </section>
-        
-      </div>
-    </div>
-  </div>
 </header>
-
-
 <main>
-  <!-- Service Section -->
-  <section class="container-fluid bg-light text-center text-Secondary mb-4">
-      <app-service-banner class="row"></app-service-banner>
-  </section>
-
-  <!-- Feature Section -->
-  <section class="container text-center">
-      <app-feature></app-feature>
-  </section>
-
-  <!-- Section Promote banners -->
-  <section class="container-fluild">
-    <app-promote-banner></app-promote-banner>
-  </section>
-
-    <!-- Social Links -->
-    <section class="container text-center">
-      <section class="row text-center">
-  
-        <section class="col-3 col-xs-6 col-md-6 col-lg-3">
-          <a href="https://www.facebook.com/tooensure/" class="reset-link">
-            <div class="feature">
-              <img src="../assets/img/social-media/facebook-square-brands.svg" class="feature__image mb-2" width="30" alt="">
-              <p class="feature__title">Facebook</p>
-            </div>
-          </a>
-        </section>
-        <!-- https://www.instagram.com/tooensurellc/ -->
-        <section class="col-3 col-xs-6 col-md-6 col-lg-3">
-          <a href="https://www.instagram.com/tooensurellc/" class="reset-link">
-            <div class="feature">
-              <img src="../assets/img/social-media/instagram-square-brands (1).svg" class="feature__image mb-2" width="30" alt="">
-              <p class="feature__title">Instagram</p>
-            </div>
-          </a>
-        </section>
-    <!-- https://twitter.com/ -->
-        <section class="col-3 col-xs-6 col-md-6 col-lg-3">
-          <a href="https://twitter.com/" class="reset-link">
-            <div class="feature">
-              <img src="../assets/img/social-media/twitter-square-brands.svg" class="reset-link feature__image mb-2" width="30" alt="">
-              <p class="feature__title">Twitter</p>
-            </div>
-          </a>
-        </section>
-    <!-- https://www.youtube.com/channel/UCJhMqAFI5-rgJCTFXVhbmjw -->
-        <section class="col-3 feature col-xs-6 col-md-6 col-lg-3">
-          <a href="https://www.youtube.com/channel/UCJhMqAFI5-rgJCTFXVhbmjw" class="reset-link">
-            <img src="../assets/img//social-media/youtube-brands.svg" class="feature__image mb-2" width="30" alt="">
-            <p class="feature__title reset-link">Youtube</p>
-          </a>
-        </section>
-      </section>
-    </section>
-
-  <!-- <section class="container">
-    <section class="row">
-      <section class="col-12 rounded bg-info">
-        <div class="d-flex gap-2 align-items-center p-2">
-          <img src="../assets/img/icons/car-side-solid.svg" width="25" alt="">
-          <p class="m-0">Our Site | Great Features | On The Way !</p>
-        </div>
-      </section>
-      <section class="col-12 rounded bg-warning">
-        <div class="d-flex gap-2 align-items-center p-2">
-          <img src="../assets/img/icons/car-side-solid.svg" width="25" alt="">
-          <p class="m-0">Site Maintenance ~ We'll be back soon</p>
-        </div>
-      </section>
-    </section>
-  </section> -->
-
-
-
+  <router-outlet></router-outlet>
 </main>
 <footer>
+  
   <section class="container-fluid bg-dark">
     <section class="row">
       <section class="col-xs-6 col-sm-6 col-md-3 mt-5">
         <img src="../assets/img/brand/TooensureLight.png" class="w-50" alt="">
-        <p>Copyright</p>
+        <p>Copyright s</p>
       </section>
     </section>
   </section>
+  <app-social-media></app-social-media>
 </footer>

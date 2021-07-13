@@ -1,0 +1,19 @@
+
+        <article class="card">
+            <img src="{{ element.imagePath }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <section class="">
+                <button *ngFor="let tag of element.tags" class="btn btn-outline-secondary btn-tag" type="button">{{ tag }}</button>
+              </section>
+              <section class="d-flex justify-content-between">
+                <h5 class="card-title">{{ element.title }}</h5>
+                <p>{{ element.price }}</p>
+              </section>
+              <p class="card-text">{{ element.desc }}</p>
+              <section class="d-flex justify-content-end ">
+                <a routerLink="{{element.btnLink}}" class="btn btn-primary stretched-link">Buy Now</a>
+              </section>
+            </div>
+        </article>
+
+  <!-- ../../../assets/img/template/Picture.png -->

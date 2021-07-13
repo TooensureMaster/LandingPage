@@ -1,0 +1,13 @@
+<section class=" row home-theme">
+    <section class="col-sm-12 align-self-center">
+        <div class="text-center text-white">
+            <div class="hero-content">
+                <h1 class="hero-content__title mb-5">{{ element.title }}</h1>
+                <p class="hero-content__subtitle mb-5">{{ element.subtitle }}</p>
+                <div *ngIf="element.btnLink != null;">
+                    <a routerLink="{{ element.btnLink }}" class="btn btn-primary">{{ element.btnText }}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
